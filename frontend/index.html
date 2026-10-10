@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Page Manager</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Facebook Page Manager</h1>
+        <p>Multimodal AI agent dashboard</p>
+      </header>
+
+      <section class="panel">
+        <h2>AI Agent</h2>
+        <textarea id="agentMessage" rows="5" placeholder="Ask the AI about posts, insights, or content strategy..."></textarea>
+        <button id="sendAgent">Send to AI</button>
+        <pre id="agentOutput">Response will appear here...</pre>
+      </section>
+
+      <section class="panel">
+        <h2>Publish to Facebook Page</h2>
+        <textarea id="pagePost" rows="4" placeholder="Write your page post"></textarea>
+        <input id="pageLink" type="text" placeholder="Optional link" />
+        <button id="publishToPage">Publish</button>
+        <pre id="publishOutput">Publish result will appear here...</pre>
+      </section>
+
+      <section class="panel">
+        <h2>File Upload & OCR</h2>
+        <input id="fileInput" type="file" />
+        <button id="extractFile">Extract text</button>
+        <pre id="fileOutput">File extraction output will appear here...</pre>
+      </section>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
